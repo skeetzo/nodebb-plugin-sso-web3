@@ -20,7 +20,7 @@ plugin.init = async params => {
 plugin.addMenuItem = async header => {
 	header.plugins.push({
 		route: '/plugins/sso/web3',
-		icon: 'fa-ethereum',
+		icon: 'fa-brands fa-ethereum',
 		name: 'Web3 SSO',
 	});
 
@@ -33,7 +33,7 @@ plugin.filterAuthInit = async loginStrategies => {
 		url: '/auth/web3',
 		urlMethod: 'post',
 		callbackURL: '/auth/web3/callback',
-		icon: 'fa-ethereum',
+		icon: 'fa-brands fa-ethereum',
 		scope: ''
 	});
 
@@ -50,7 +50,7 @@ plugin.filterAuthList = async authList => {
 			url: `https://www.etherscan.io/address/${address}`,
 			deauthUrl: '#',
 			name: 'web3 address',
-			icon: 'fa-ethereum',
+			icon: 'fa-brands fa-ethereum',
 			component: 'web3/disassociate',
 		});
 	} else {
@@ -58,7 +58,7 @@ plugin.filterAuthList = async authList => {
 			associated: false,
 			name: 'web3 address',
 			url: '#',
-			icon: 'fa-ethereum',
+			icon: 'fa-brands fa-ethereum',
 			component: 'web3/associate',
 		});
 	}

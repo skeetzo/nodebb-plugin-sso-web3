@@ -66,7 +66,7 @@ $(document).ready(() => {
 					// BUG
 					// page reloads before going to "/"
 					// was working previously without timeout
-					setTimeout(function() {window.location.reload();}, 500)
+					// setTimeout(function() {window.location.reload();}, 500)
 				}
 			}).catch(err => { console.log(err); });
 		}).catch(err => { console.log(err); });
