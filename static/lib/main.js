@@ -1,6 +1,7 @@
 'use strict';
 
 /* globals document, web3, $ */
+const web3 = require("web3");
 
 $(document).ready(() => {
 	const showWelcomeMessage = () => {

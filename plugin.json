@@ -17,12 +17,11 @@
 		"static/style.less"
 	],
 	"scripts": [
-		"static/lib/main.js"
 	],
 	"acpScripts": [
-		"static/lib/admin.js"
 	],
 	"modules": {
-		"web3.js": "node_modules/web3/dist/web3.min.js"
+		"../static/lib/main.js" : "static/lib/main.js",
+		"../static/lib/admin.js" : "static/lib/admin.js"
 	}
 }
