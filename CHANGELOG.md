@@ -4,12 +4,13 @@
 - added ethereum logo svg to css
 - changed blockchain url -> etherscan
 - fixed web3 login prompt displaying without user request
+**4/1/2024**
+- FontAwesome ethereum logo update
+- NodeBB 3.0 compatibility bump
 
 # TODO
 
 - fix /auth/web3 login's temporary page redirect
-
-- [BUG] fix login redirect timeout being required in main.js
 
 # Links
 

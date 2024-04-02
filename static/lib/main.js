@@ -63,11 +63,6 @@ $(document).ready(() => {
 					ajaxify.go(`${config.relative_path}/me/edit`);
 				} else {
 					ajaxify.go("/");
-					// BUG
-					// page reloads before going to "/"
-					// was working previously without timeout
-					// setTimeout(function() {window.location.reload();}, 500)
-					window.location.reload();
 				}
 			}).catch(err => { console.log(err); });
 		}).catch(err => { console.log(err); });
